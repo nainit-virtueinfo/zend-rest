@@ -8,7 +8,7 @@
  *
  * @package    Zend-rest
  * @subpackage application
- * @author     Rashmi Upadhyay,Arpita Rana
+ * @author     Nainit Kalariya
  * @version    SVN: $Id: LoginController.class.php 20147 2009-07-13 11:46:57Z FabianLange $  
  */
 

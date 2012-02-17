@@ -1,0 +1,84 @@
+/* ######### CSS for Shade Tabs. Remove if not using ######### */
+
+.shadetabs{
+position:relative;
+width:400px;
+float:right;
+padding: 0px 0px 0px 0px; 
+margin-left: 0;
+margin-top: -35px;
+margin-bottom: 0px;
+margin-right:0px;
+font: bold 12px Verdana;
+list-style-type: none;
+text-align: left; /*set to left, center, or right to align the menu as desired*/
+}
+
+
+.shadetabs li{
+float:right;
+margin: 0;
+margin-right: 5px;
+margin-top:0px;
+}
+
+.shadetabs li a{
+text-decoration: none;
+position: relative;
+z-index: 1;
+color: #666666;
+display:block;
+text-transform:uppercase;
+border:0px;
+}
+.shadetabs li a.selected{
+background:#ffffff;
+border:#cdcdcd solid;
+border-width:1px 1px 0px 1px;
+-moz-border-radius:6px 6px 0px 0px;
+color:#1E92B1;
+display:block; 
+padding:5px 20px;
+}
+
+.shadetabs li a{display:block; padding: 5px 20px; color:#666666; font-family:Verdana, Arial, Helvetica, sans-serif!important;}
+
+
+.shadetabs li a:visited{
+
+}
+
+.shadetabs li a:hover{
+text-decoration: none;
+color: #1E92B1;
+}
+
+.shadetabs li a.selected{ /*selected main tab style */
+position: relative;
+top: 0px;
+color: #1E92B1;
+}
+
+.shadetabs li a.selected{ /*selected main tab style */
+
+}
+
+.shadetabs li a.selected:hover{ /*selected main tab style */
+text-decoration: none;
+}
+
+.tabcontent{
+/*display:none;*/
+
+}
+
+@media print {
+.tabcontent {
+/*display:block !important;*/
+}
+}
+
+
+.tabingBox{ width:100%; padding:0px 0px 20px 0px; margin-top:4px; float:left;}
+*html .tabingBox{margin-top:2px;}
+.borderbox{ border:solid #b3b3b3; border-width:0px 1px 1px 1px; float:left;  margin-top:-4px; width:729px;}

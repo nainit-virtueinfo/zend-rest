@@ -1,0 +1,59 @@
+[production]
+phpSettings.display_startup_errors = 0
+phpSettings.display_errors = 0
+includePaths.library = APPLICATION_PATH "/../library"
+bootstrap.path = APPLICATION_PATH "/Bootstrap.php"
+bootstrap.class = "Bootstrap"
+appnamespace = "Application"
+resources.frontController.controllerDirectory = APPLICATION_PATH "/controllers"
+resources.frontController.params.displayExceptions = 0
+phpSettings.date.timezone = "Europe/London"
+constants.REST_SERVER_URI = "http://101.zendrest.nit/restserver"
+; For autoload doctrine.
+autoloaderNamespaces[] = "Doctrine"
+
+; --- Database settings for Doctrine ---
+doctrine.dsn = "mysql://root:101mysql@localhost/test_shashank" ; set your database like mysql://user:pass@localhost/db.
+doctrine.data_fixtures_path = APPLICATION_PATH "/configs/data/fixtures"
+doctrine.sql_path           = APPLICATION_PATH "/configs/data/sql"
+doctrine.migrations_path    = APPLICATION_PATH "/configs/migrations"
+doctrine.yaml_schema_path   = APPLICATION_PATH "/configs/schema.yml"
+doctrine.models_path        = APPLICATION_PATH "/models"
+
+
+doctrine.generate_models_options.pearStyle = false
+doctrine.generate_models_options.generateTableClasses = true
+doctrine.generate_models_options.generateBaseClasses = true
+doctrine.generate_models_options.baseClassPrefix = "Base_"
+doctrine.generate_models_options.baseClassesDirectory = "Base"
+doctrine.generate_models_options.classPrefixFiles = true
+doctrine.generate_models_options.classPrefix = "Model_"
+
+; Doctrine needs to use Aggesssive autoloading for the CLI to generate prefixed models appropriately. MODEL AUTOLOADING: 1 = aggressive, 2 = conservative
+doctrine.model_autoloading = 2
+
+resources.layout.layoutPath = APPLICATION_PATH "/layouts/scripts/"
+admin.resources.layout.layout = "admin"
+admin.resources.layout.layoutPath = APPLICATION_PATH "/modules/admin/layouts/scripts"
+resources.frontController.moduleDirectory = APPLICATION_PATH "/modules"
+
+[staging : production]
+
+[doctrineCLI : production ]
+doctrine.model_autoloading = 2
+
+[testing : production]
+; For Zend_db
+;resources.db.adapter       = "PDO_SQLITE"
+;resources.db.params.dbname = APPLICATION_PATH "/../tests/fixtures/db/testingFunctional.sqlite3"
+
+
+phpSettings.display_startup_errors = 1
+phpSettings.display_errors = 1
+; For Doctrine
+doctrine.dsn = "sqlite:///" APPLICATION_PATH "/../tests/fixtures/db/doctrinesqlitetestdb.sqlite3"
+
+[development : production]
+phpSettings.display_startup_errors = 1
+phpSettings.display_errors = 1
+resources.frontController.params.displayExceptions = 1

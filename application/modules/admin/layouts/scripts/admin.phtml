@@ -1,0 +1,33 @@
+<?php
+$this->headMeta()->appendHttpEquiv('Content-Type', 'text/html;charset=utf-8');
+$this->headTitle()->setSeparator(' - ');
+$this->headTitle('VirtueInfo PVT Ltd.');
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<?php echo $this->headMeta(); ?>
+		<?php echo $this->headTitle(); ?>
+		<?php echo $this->jQuery();
+		//$this->baseUrl() = \\101arpita\arpita\web\zend-rest\public
+		echo $this->headLink()->prependStylesheet($this->baseUrl().'/css/main.css'); ?>
+		<?php echo $this->headLink()->prependStylesheet($this->baseUrl().'/css/tabcontent.css'); ?>
+		<?php //echo $this->headScript()->appendFile($this->baseUrl().'/js/tabcontent.js'); ?>
+		<?php echo $this->headScript()->appendFile($this->baseUrl().'/js/jscolor.js'); ?>
+	</head>
+	<body>
+		<table class="MainTable" width="100%" border="0" cellspacing="0" cellpadding="0">
+		  <tr> 
+			<?php echo $this->render('_leftnav.phtml') ?>
+			  <td valign="top" align="left" width="97%">
+				<div id="RightBar">
+					<?php echo $this->render('_header.phtml') ?>
+						<div id="content">
+							<?php echo $this->layout()->content; ?>
+						</div>
+				</div>
+			  </td>
+		  </tr>
+		</table>
+	</body>
+</html>

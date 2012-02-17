@@ -1,0 +1,69 @@
+<script type="text/javascript">
+function validate()
+{
+//    var p = document.forms['personal'];
+    var JSONObject = new Object;
+    JSONObject.firstname = 'nainit';
+    JSONObject.email = 'nainit@virtueinfo.com';
+    JSONObject.hobby = new Array;
+ 
+    for(var i=0; i<3; i++)
+    {
+        JSONObject.hobby[i] = new Object;
+        JSONObject.hobby[i].hobbyName = 'cricket';
+//        JSONObject.hobby[i].isHobby = p['hobby'][i].checked;
+    }
+    JSONstring = JSON.stringify(JSONObject);
+    //runAjax(JSONstring);
+}
+</script>
+
+<?php $this->title = ($this->param=='') ? "Add Category" : "Edit Category"; $this->headTitle($this->title); ?>
+<div class="RightContent">
+	<div class="ContentBox" >
+		<h3 id="click_here"><?php echo $this->title; ?></h3>
+		<div class="ContentData" id="div1">
+			<div class="clearb borderRight">
+				<ul id="countrytabs" class="shadetabs"></ul> 
+				<div class="tabingBox">
+					<div id="country1" class="tabcontent" style="display:">
+						<div class="TableContainer">
+							<form action="/admin/category/addedit" method="<?php echo $this->categoryform->getMethod(); ?>" onSubmit="return validate()"> 
+								<table width="100%" border="0" cellspacing="0" cellpadding="5">
+									<tbody>
+<!--									Pick your Date: <?php //echo $this->datePicker("dp1",'', array('defaultDate' =>date('Y/m/d', time())));?>
+									Pick your color: <?php //echo $this->colorPicker("cp1",'',array('color'=>'red'));?>
+									Click here to pick color: <input class="color" value="66ff00">-->
+										<?php
+											foreach($this->categoryform->getElements() as $ssFormField => $asField):
+												if($asField->helper != 'formHidden' && $asField->helper != 'formSubmit'):
+										?>
+											<tr>
+												<th width="20%"><?php echo $asField->renderLabel();?></th>
+												<th width="80%"><?php echo $asField->renderViewHelper(); 
+												echo $asField->renderErrors();
+												//if($this->errorMessage && $asField->renderViewHelper() == $this->form->email->renderViewHelper())
+													//echo $this->errorMessage;
+												?></th>
+											</tr>
+										<?php else: ?>
+											<tr>
+												<th width="20%"></th>
+												<th width="80%"><?php echo $asField->renderViewHelper();?></th>
+											</tr>
+										<?php
+												endif;
+											endforeach;
+										?>
+									</tbody>
+								</table>
+							</form>
+						</div>
+					</div>
+					<div class="clearb"></div>
+				</div>
+			</div>
+			<div class="clearb"><div></div></div>
+		</div>
+	</div>
+</div>

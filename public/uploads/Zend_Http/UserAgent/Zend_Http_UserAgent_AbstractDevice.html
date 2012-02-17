@@ -1,0 +1,1846 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Zend_Http_UserAgent_AbstractDevice</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Zend_Http_UserAgent_AbstractDevice</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+							<a href="#sec-descendents">Descendents</a>
+			|											<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+                <p class="implements">
+            Implements interfaces:
+            <ul>
+                <li><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Device.html">Zend_Http_UserAgent_Device</a></li>            </ul>
+        </p>
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Abstract Class to define a browser device.</p>
+	<ul class="tags">
+				<li><span class="field">copyright:</span> Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)</li>
+				<li><span class="field">abstract:</span> </li>
+				<li><span class="field">license:</span> <a href="http://framework.zend.com/license/new-bsd">New BSD License</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_UserAgent---AbstractDevice.php.html">/UserAgent/AbstractDevice.php</a> (line <span class="field">33</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+	<a name="sec-descendents"></a>
+	<div class="info-box">
+		<div class="info-box-title">Direct descendents</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+			<span class="disabled">Descendents</span>
+			|												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+								|															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Feed.html">Zend_Http_UserAgent_Feed</a></td>
+					<td>
+											Feed browser type matcher
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Mobile.html">Zend_Http_UserAgent_Mobile</a></td>
+					<td>
+											Mobile browser type matcher
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Bot.html">Zend_Http_UserAgent_Bot</a></td>
+					<td>
+											Bot browser type matcher
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Spam.html">Zend_Http_UserAgent_Spam</a></td>
+					<td>
+											Spam browser type matcher
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Probe.html">Zend_Http_UserAgent_Probe</a></td>
+					<td>
+											Probe browser type matcher
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Text.html">Zend_Http_UserAgent_Text</a></td>
+					<td>
+											Text browser type matcher
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../../Zend_Browser/Zend_Http_UserAgent_Desktop.html">Zend_Http_UserAgent_Desktop</a></td>
+					<td>
+											Desktop browser type matcher
+										</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_aFeatures" title="details" class="var-name">$_aFeatures</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_aGroup" title="details" class="var-name">$_aGroup</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$_browser" title="details" class="var-name">$_browser</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$_browserVersion" title="details" class="var-name">$_browserVersion</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_config" title="details" class="var-name">$_config</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_images" title="details" class="var-name">$_images</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_server" title="details" class="var-name">$_server</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$_userAgent" title="details" class="var-name">$_userAgent</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																				<div class="method-definition">
+					static 						<span class="method-result">array</span>
+										<a href="#extractFromUserAgent" title="details" class="method-name">extractFromUserAgent</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$userAgent</span>)
+									</div>
+																																																																																																																																																																																																																																																																																<div class="method-definition">
+					static 						<span class="method-result">bool</span>
+										<a href="#_matchAgentAgainstSignatures" title="details" class="method-name">_matchAgentAgainstSignatures</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$userAgent</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$signatures</span>)
+									</div>
+																
+												<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											([<span class="var-type">null|string|array</span>&nbsp;<span class="var-name">$userAgent</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$server</span> = <span class="var-default">array()</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$config</span> = <span class="var-default">array()</span>])
+									</div>
+																								<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getAllFeatures" title="details" class="method-name">getAllFeatures</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getAllGroups" title="details" class="method-name">getAllGroups</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getBrowser" title="details" class="method-name">getBrowser</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getBrowserVersion" title="details" class="method-name">getBrowserVersion</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string|null</span>
+										<a href="#getFeature" title="details" class="method-name">getFeature</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$feature</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getGroup" title="details" class="method-name">getGroup</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$group</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getImageFormatSupport" title="details" class="method-name">getImageFormatSupport</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">the</span>
+										<a href="#getImages" title="details" class="method-name">getImages</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#getMaxImageHeight" title="details" class="method-name">getMaxImageHeight</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#getMaxImageWidth" title="details" class="method-name">getMaxImageWidth</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#getPhysicalScreenHeight" title="details" class="method-name">getPhysicalScreenHeight</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#getPhysicalScreenWidth" title="details" class="method-name">getPhysicalScreenWidth</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getPreferredMarkup" title="details" class="method-name">getPreferredMarkup</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getType" title="details" class="method-name">getType</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getUserAgent" title="details" class="method-name">getUserAgent</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#getXhtmlSupportLevel" title="details" class="method-name">getXhtmlSupportLevel</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#hasFeature" title="details" class="method-name">hasFeature</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$feature</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#hasFlashSupport" title="details" class="method-name">hasFlashSupport</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#hasPdfSupport" title="details" class="method-name">hasPdfSupport</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#hasPhoneNumber" title="details" class="method-name">hasPhoneNumber</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#httpsSupport" title="details" class="method-name">httpsSupport</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#serialize" title="details" class="method-name">serialize</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setBrowser" title="details" class="method-name">setBrowser</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$browser</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setBrowserVersion" title="details" class="method-name">setBrowserVersion</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$browserVersion</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_AbstractDevice.html">Zend_Http_UserAgent_AbstractDevice</a></span>
+										<a href="#setFeature" title="details" class="method-name">setFeature</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$feature</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span> = <span class="var-default">false</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$group</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_AbstractDevice.html">Zend_Http_UserAgent_AbstractDevice</a></span>
+										<a href="#setGroup" title="details" class="method-name">setGroup</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$group</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$feature</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setImages" title="details" class="method-name">setImages</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$_images</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setUserAgent" title="details" class="method-name">setUserAgent</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$userAgent</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#unserialize" title="details" class="method-name">unserialize</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$serialized</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array|null</span>
+										<a href="#_defineFeatures" title="details" class="method-name">_defineFeatures</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_getDefaultFeatures" title="details" class="method-name">_getDefaultFeatures</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#_loadFeaturesAdapter" title="details" class="method-name">_loadFeaturesAdapter</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$browserType</span>)
+									</div>
+																								<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_restoreFromArray" title="details" class="method-name">_restoreFromArray</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$spec</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$_aFeatures" id="$_aFeatures"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_aFeatures</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">90</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Browser/Device features</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_aGroup" id="$_aGroup"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_aGroup</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">97</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Browser/Device features groups</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_browser" id="$_browser"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_browser</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number">41</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Browser signature</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_browserVersion" id="$_browserVersion"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_browserVersion</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number">48</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Browser version</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_config" id="$_config"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_config</span>
+						(line <span class="line-number">55</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Configuration</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_images" id="$_images"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_images</span>
+			 = <span class="var-default">array(<br />        'jpeg',<br />        'gif',<br />        'png',<br />        'pjpeg',<br />        'x-png',<br />        'bmp',<br />    )</span>			(line <span class="line-number">76</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Image types</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_server" id="$_server"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_server</span>
+						(line <span class="line-number">69</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Server variable</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_userAgent" id="$_userAgent"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_userAgent</span>
+						(line <span class="line-number">62</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">User Agent chain</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodextractFromUserAgent" id="extractFromUserAgent"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method extractFromUserAgent</span> (line <span class="line-number">401</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Extract and sets informations from the User Agent chain</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">array</span>
+		<span class="method-name">
+			extractFromUserAgent
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$userAgent</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$userAgent</span><span class="var-description">: User Agent chain</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_matchAgentAgainstSignatures" id="_matchAgentAgainstSignatures"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method _matchAgentAgainstSignatures</span> (line <span class="line-number">961</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Match a user agent string against a list of signatures</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			_matchAgentAgainstSignatures
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$userAgent</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$signatures</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$userAgent</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$signatures</span>			</li>
+				</ul>
+		
+			
+	</div>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">107</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			__construct
+		</span>
+					([<span class="var-type">null|string|array</span>&nbsp;<span class="var-name">$userAgent</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$server</span> = <span class="var-default">array()</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$config</span> = <span class="var-default">array()</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">null|string|array</span>
+				<span class="var-name">$userAgent</span><span class="var-description">: If array, restores from serialized version</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$server</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$config</span>			</li>
+				</ul>
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Device.html#method__construct">Zend_Http_UserAgent_Device::__construct()</a></dt>
+						<dd>Constructor</dd>
+					</dl>
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Mobile.html#method__construct">Zend_Http_UserAgent_Mobile::__construct()</a>
+								: Constructor
+							</li>
+				</ul>
+	</div>
+<a name="methodgetAllFeatures" id="getAllFeatures"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAllFeatures</span> (line <span class="line-number">265</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets all the browser/device features</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getAllFeatures
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Device.html#methodgetAllFeatures">Zend_Http_UserAgent_Device::getAllFeatures()</a></dt>
+						<dd>Get all browser/device features</dd>
+					</dl>
+			
+	</div>
+<a name="methodgetAllGroups" id="getAllGroups"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAllGroups</span> (line <span class="line-number">275</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets all the browser/device features' groups</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getAllGroups
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Device.html#methodgetAllGroups">Zend_Http_UserAgent_Device::getAllGroups()</a></dt>
+						<dd>Get all of the browser/device's features' groups</dd>
+					</dl>
+			
+	</div>
+<a name="methodgetBrowser" id="getBrowser"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getBrowser</span> (line <span class="line-number">888</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the browser type</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getBrowser
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Device.html#methodgetBrowser">Zend_Http_UserAgent_Device::getBrowser()</a></dt>
+						<dd>Get the browser type</dd>
+					</dl>
+			
+	</div>
+<a name="methodgetBrowserVersion" id="getBrowserVersion"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getBrowserVersion</span> (line <span class="line-number">898</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the browser version</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getBrowserVersion
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Device.html#methodgetBrowserVersion">Zend_Http_UserAgent_Device::getBrowserVersion()</a></dt>
+						<dd>Retrurn the browser version</dd>
+					</dl>
+			
+	</div>
+<a name="methodgetFeature" id="getFeature"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getFeature</span> (line <span class="line-number">207</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets the value of the current browser/device feature</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string|null</span>
+		<span class="method-name">
+			getFeature
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$feature</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$feature</span><span class="var-description">: Feature to search</span>			</li>
+				</ul>
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Device.html#methodgetFeature">Zend_Http_UserAgent_Device::getFeature()</a></dt>
+						<dd>Get the value of a specific device feature</dd>
+					</dl>
+			
+	</div>
+<a name="methodgetGroup" id="getGroup"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getGroup</span> (line <span class="line-number">255</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets an array of features associated to a group</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getGroup
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$group</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$group</span><span class="var-description">: Group param</span>			</li>
+				</ul>
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Device.html#methodgetGroup">Zend_Http_UserAgent_Device::getGroup()</a></dt>
+						<dd>Get an array of features associated with a group</dd>
+					</dl>
+			
+	</div>
+<a name="methodgetImageFormatSupport" id="getImageFormatSupport"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getImageFormatSupport</span> (line <span class="line-number">778</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieve image format support</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getImageFormatSupport
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Device.html#methodgetImageFormatSupport">Zend_Http_UserAgent_Device::getImageFormatSupport()</a></dt>
+						<dd>Retrieve image format support</dd>
+					</dl>
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Mobile.html#methodgetImageFormatSupport">Zend_Http_UserAgent_Mobile::getImageFormatSupport()</a>
+								: Determine image format support
+							</li>
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Text.html#methodgetImageFormatSupport">Zend_Http_UserAgent_Text::getImageFormatSupport()</a>
+								: Determine supported image formats
+							</li>
+				</ul>
+	</div>
+<a name="methodgetImages" id="getImages"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getImages</span> (line <span class="line-number">916</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">the</span>
+		<span class="method-name">
+			getImages
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Device.html#methodgetImages">Zend_Http_UserAgent_Device::getImages()</a></dt>
+						<dd>Get image types</dd>
+					</dl>
+			
+	</div>
+<a name="methodgetMaxImageHeight" id="getMaxImageHeight"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getMaxImageHeight</span> (line <span class="line-number">788</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get maximum image height supported by this device</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			getMaxImageHeight
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Device.html#methodgetMaxImageHeight">Zend_Http_UserAgent_Device::getMaxImageHeight()</a></dt>
+						<dd>Get the maximum image height supported by this device</dd>
+					</dl>
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Mobile.html#methodgetMaxImageHeight">Zend_Http_UserAgent_Mobile::getMaxImageHeight()</a>
+								: Determine maximum image height supported
+							</li>
+				</ul>
+	</div>
+<a name="methodgetMaxImageWidth" id="getMaxImageWidth"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getMaxImageWidth</span> (line <span class="line-number">798</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get maximum image width supported by this device</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			getMaxImageWidth
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Device.html#methodgetMaxImageWidth">Zend_Http_UserAgent_Device::getMaxImageWidth()</a></dt>
+						<dd>Get the maximum image width supported by this device</dd>
+					</dl>
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Mobile.html#methodgetMaxImageWidth">Zend_Http_UserAgent_Mobile::getMaxImageWidth()</a>
+								: Determine maximum image width supported
+							</li>
+				</ul>
+	</div>
+<a name="methodgetPhysicalScreenHeight" id="getPhysicalScreenHeight"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getPhysicalScreenHeight</span> (line <span class="line-number">808</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get physical screen height of this device</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			getPhysicalScreenHeight
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Device.html#methodgetPhysicalScreenHeight">Zend_Http_UserAgent_Device::getPhysicalScreenHeight()</a></dt>
+						<dd>Get the physical screen height of this device</dd>
+					</dl>
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Mobile.html#methodgetPhysicalScreenHeight">Zend_Http_UserAgent_Mobile::getPhysicalScreenHeight()</a>
+								: Determine physical screen height
+							</li>
+				</ul>
+	</div>
+<a name="methodgetPhysicalScreenWidth" id="getPhysicalScreenWidth"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getPhysicalScreenWidth</span> (line <span class="line-number">818</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get physical screen width of this device</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			getPhysicalScreenWidth
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Device.html#methodgetPhysicalScreenWidth">Zend_Http_UserAgent_Device::getPhysicalScreenWidth()</a></dt>
+						<dd>Get the physical screen width of this device</dd>
+					</dl>
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Mobile.html#methodgetPhysicalScreenWidth">Zend_Http_UserAgent_Mobile::getPhysicalScreenWidth()</a>
+								: Determine physical screen width
+							</li>
+				</ul>
+	</div>
+<a name="methodgetPreferredMarkup" id="getPreferredMarkup"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getPreferredMarkup</span> (line <span class="line-number">828</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get preferred markup type</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getPreferredMarkup
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Device.html#methodgetPreferredMarkup">Zend_Http_UserAgent_Device::getPreferredMarkup()</a></dt>
+						<dd>Get the preferred markup type</dd>
+					</dl>
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Mobile.html#methodgetPreferredMarkup">Zend_Http_UserAgent_Mobile::getPreferredMarkup()</a>
+								: Determine preferred markup
+							</li>
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Text.html#methodgetPreferredMarkup">Zend_Http_UserAgent_Text::getPreferredMarkup()</a>
+								: Get preferred markup format
+							</li>
+				</ul>
+	</div>
+<a name="methodgetType" id="getType"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getType</span> (line <span class="line-number">188</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets the browser type identifier</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getType
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Feed.html#methodgetType">Zend_Http_UserAgent_Feed::getType()</a>
+								: Gives the current browser type
+							</li>
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Mobile.html#methodgetType">Zend_Http_UserAgent_Mobile::getType()</a>
+								: Gives the current browser type
+							</li>
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Bot.html#methodgetType">Zend_Http_UserAgent_Bot::getType()</a>
+								: Gives the current browser type
+							</li>
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Spam.html#methodgetType">Zend_Http_UserAgent_Spam::getType()</a>
+								: Gives the current browser type
+							</li>
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Probe.html#methodgetType">Zend_Http_UserAgent_Probe::getType()</a>
+								: Gives the current browser type
+							</li>
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Text.html#methodgetType">Zend_Http_UserAgent_Text::getType()</a>
+								: Gives the current browser type
+							</li>
+					<li>
+				<a href="../../Zend_Browser/Zend_Http_UserAgent_Desktop.html#methodgetType">Zend_Http_UserAgent_Desktop::getType()</a>
+								: Gives the current browser type
+							</li>
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Checker.html#methodgetType">Zend_Http_UserAgent_Checker::getType()</a>
+								: Gives the current browser type
+							</li>
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Console.html#methodgetType">Zend_Http_UserAgent_Console::getType()</a>
+								: Gives the current browser type
+							</li>
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Validator.html#methodgetType">Zend_Http_UserAgent_Validator::getType()</a>
+								: Gives the current browser type
+							</li>
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Email.html#methodgetType">Zend_Http_UserAgent_Email::getType()</a>
+								: Gives the current browser type
+							</li>
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Offline.html#methodgetType">Zend_Http_UserAgent_Offline::getType()</a>
+								: Gives the current browser type
+							</li>
+				</ul>
+	</div>
+<a name="methodgetUserAgent" id="getUserAgent"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getUserAgent</span> (line <span class="line-number">908</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the user agent string</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getUserAgent
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Device.html#methodgetUserAgent">Zend_Http_UserAgent_Device::getUserAgent()</a></dt>
+						<dd>Get the user agent string</dd>
+					</dl>
+			
+	</div>
+<a name="methodgetXhtmlSupportLevel" id="getXhtmlSupportLevel"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getXhtmlSupportLevel</span> (line <span class="line-number">838</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get supported X/HTML version</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			getXhtmlSupportLevel
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Device.html#methodgetXhtmlSupportLevel">Zend_Http_UserAgent_Device::getXhtmlSupportLevel()</a></dt>
+						<dd>Get supported X/HTML version</dd>
+					</dl>
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Mobile.html#methodgetXhtmlSupportLevel">Zend_Http_UserAgent_Mobile::getXhtmlSupportLevel()</a>
+								: Determine X/HTML support level
+							</li>
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Text.html#methodgetXhtmlSupportLevel">Zend_Http_UserAgent_Text::getXhtmlSupportLevel()</a>
+								: Get supported X/HTML markup level
+							</li>
+				</ul>
+	</div>
+<a name="methodhasFeature" id="hasFeature"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">hasFeature</span> (line <span class="line-number">196</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Check a feature for the current browser/device.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			hasFeature
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$feature</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$feature</span><span class="var-description">: The feature to check.</span>			</li>
+				</ul>
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Device.html#methodhasFeature">Zend_Http_UserAgent_Device::hasFeature()</a></dt>
+						<dd>Whether or not the device has a given feature</dd>
+					</dl>
+			
+	</div>
+<a name="methodhasFlashSupport" id="hasFlashSupport"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">hasFlashSupport</span> (line <span class="line-number">848</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Does the device support Flash?</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			hasFlashSupport
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Device.html#methodhasFlashSupport">Zend_Http_UserAgent_Device::hasFlashSupport()</a></dt>
+						<dd>Does the device support Flash?</dd>
+					</dl>
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Mobile.html#methodhasFlashSupport">Zend_Http_UserAgent_Mobile::hasFlashSupport()</a>
+								: Does the device support Flash?
+							</li>
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Text.html#methodhasFlashSupport">Zend_Http_UserAgent_Text::hasFlashSupport()</a>
+								: Does the device support Flash?
+							</li>
+				</ul>
+	</div>
+<a name="methodhasPdfSupport" id="hasPdfSupport"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">hasPdfSupport</span> (line <span class="line-number">858</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Does the device support PDF?</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			hasPdfSupport
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Device.html#methodhasPdfSupport">Zend_Http_UserAgent_Device::hasPdfSupport()</a></dt>
+						<dd>Does the device support PDF?</dd>
+					</dl>
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Mobile.html#methodhasPdfSupport">Zend_Http_UserAgent_Mobile::hasPdfSupport()</a>
+								: Does the device support PDF?
+							</li>
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Text.html#methodhasPdfSupport">Zend_Http_UserAgent_Text::hasPdfSupport()</a>
+								: Does the device support PDF?
+							</li>
+				</ul>
+	</div>
+<a name="methodhasPhoneNumber" id="hasPhoneNumber"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">hasPhoneNumber</span> (line <span class="line-number">868</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Does the device have a phone number associated with it?</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			hasPhoneNumber
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Device.html#methodhasPhoneNumber">Zend_Http_UserAgent_Device::hasPhoneNumber()</a></dt>
+						<dd>Does the device have a phone number associated with it?</dd>
+					</dl>
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Mobile.html#methodhasPhoneNumber">Zend_Http_UserAgent_Mobile::hasPhoneNumber()</a>
+								: Does the device have an associated phone number?
+							</li>
+				</ul>
+	</div>
+<a name="methodhttpsSupport" id="httpsSupport"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">httpsSupport</span> (line <span class="line-number">878</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Does the device support HTTPS?</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			httpsSupport
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Device.html#methodhttpsSupport">Zend_Http_UserAgent_Device::httpsSupport()</a></dt>
+						<dd>Does the device support HTTPS?</dd>
+					</dl>
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Mobile.html#methodhttpsSupport">Zend_Http_UserAgent_Mobile::httpsSupport()</a>
+								: Does the device support HTTPS?
+							</li>
+				</ul>
+	</div>
+<a name="methodserialize" id="serialize"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">serialize</span> (line <span class="line-number">127</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Serialize object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			serialize
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsetBrowser" id="setBrowser"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setBrowser</span> (line <span class="line-number">924</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setBrowser
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$browser</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$browser</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetBrowserVersion" id="setBrowserVersion"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setBrowserVersion</span> (line <span class="line-number">932</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setBrowserVersion
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$browserVersion</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$browserVersion</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetFeature" id="setFeature"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setFeature</span> (line <span class="line-number">222</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set a feature for the current browser/device.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_AbstractDevice.html">Zend_Http_UserAgent_AbstractDevice</a></span>
+		<span class="method-name">
+			setFeature
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$feature</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span> = <span class="var-default">false</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$group</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$feature</span><span class="var-description">: The feature to set.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span><span class="var-description">: (option) feature value.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$group</span><span class="var-description">: (option) Group to associate with the feature</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetGroup" id="setGroup"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setGroup</span> (line <span class="line-number">238</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Affects a feature to a group</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_AbstractDevice.html">Zend_Http_UserAgent_AbstractDevice</a></span>
+		<span class="method-name">
+			setGroup
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$group</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$feature</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$group</span><span class="var-description">: Group name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$feature</span><span class="var-description">: Feature name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetImages" id="setImages"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setImages</span> (line <span class="line-number">949</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setImages
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$_images</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$_images</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetUserAgent" id="setUserAgent"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setUserAgent</span> (line <span class="line-number">940</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setUserAgent
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$userAgent</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$userAgent</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodunserialize" id="unserialize"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">unserialize</span> (line <span class="line-number">146</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Unserialize</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			unserialize
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$serialized</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$serialized</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_defineFeatures" id="_defineFeatures"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_defineFeatures</span> (line <span class="line-number">172</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Look for features</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array|null</span>
+		<span class="method-name">
+			_defineFeatures
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Feed.html#method_defineFeatures">Zend_Http_UserAgent_Feed::_defineFeatures()</a>
+								: Look for features
+							</li>
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Mobile.html#method_defineFeatures">Zend_Http_UserAgent_Mobile::_defineFeatures()</a>
+								: Look for features
+							</li>
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Spam.html#method_defineFeatures">Zend_Http_UserAgent_Spam::_defineFeatures()</a>
+								: Look for features
+							</li>
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Probe.html#method_defineFeatures">Zend_Http_UserAgent_Probe::_defineFeatures()</a>
+								: Look for features
+							</li>
+					<li>
+				<a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Text.html#method_defineFeatures">Zend_Http_UserAgent_Text::_defineFeatures()</a>
+								: Look for features
+							</li>
+				</ul>
+	</div>
+<a name="method_getDefaultFeatures" id="_getDefaultFeatures"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_getDefaultFeatures</span> (line <span class="line-number">286</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets all the standard features extracted from the User Agent chain and $this-&gt;_server  vars</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_getDefaultFeatures
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_loadFeaturesAdapter" id="_loadFeaturesAdapter"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_loadFeaturesAdapter</span> (line <span class="line-number">741</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Loads the Features Adapter if it's defined in the $config array  Otherwise, nothing is done</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			_loadFeaturesAdapter
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$browserType</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$browserType</span><span class="var-description">: Browser type</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_restoreFromArray" id="_restoreFromArray"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_restoreFromArray</span> (line <span class="line-number">158</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Restore object state from array</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_restoreFromArray
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$spec</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$spec</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sat, 30 Apr 2011 12:27:44 +0530 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

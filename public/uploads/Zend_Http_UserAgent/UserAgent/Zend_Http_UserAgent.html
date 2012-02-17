@@ -1,0 +1,1464 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Zend_Http_UserAgent</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Zend_Http_UserAgent</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+											<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+						
+			</div>
+	<div class="info-box-body">
+                <p class="implements">
+            Implements interfaces:
+            <ul>
+                <li>Serializable (internal interface)</li>            </ul>
+        </p>
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Lists of User Agent chains for testing :</p>
+<p class="description"><p><ul><li>http://www.useragentstring.com/layout/useragentstring.php</li><li>http://user-agent-string.info/list-of-ua</li><li>http://www.user-agents.org/allagents.xml</li><li>http://en.wikipedia.org/wiki/List_of_user_agents_for_mobile_phones</li><li>http://www.mobilemultimedia.be/fr/</li></ul></p></p>
+	<ul class="tags">
+				<li><span class="field">copyright:</span> Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)</li>
+				<li><span class="field">license:</span> <a href="http://framework.zend.com/license/new-bsd">New BSD License</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_UserAgent.php.html">/UserAgent.php</a> (line <span class="field">37</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+	<a name="sec-const-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constant Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Constants</span> (<a href="#sec-consts">details</a>)
+												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="const-summary">
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#DEFAULT_BROWSER_TYPE" title="details" class="const-name">DEFAULT_BROWSER_TYPE</a> = 					<span class="var-type"> 'desktop'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#DEFAULT_HTTP_ACCEPT" title="details" class="const-name">DEFAULT_HTTP_ACCEPT</a> = 					<span class="var-type"> &quot;application/xhtml+xml&quot;</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#DEFAULT_HTTP_USER_AGENT" title="details" class="const-name">DEFAULT_HTTP_USER_AGENT</a> = 					<span class="var-type"> 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#DEFAULT_IDENTIFICATION_SEQUENCE" title="details" class="const-name">DEFAULT_IDENTIFICATION_SEQUENCE</a> = 					<span class="var-type"> 'mobile,desktop'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#DEFAULT_MARKUP_LANGUAGE" title="details" class="const-name">DEFAULT_MARKUP_LANGUAGE</a> = 					<span class="var-type"> &quot;xhtml&quot;</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#DEFAULT_PERSISTENT_STORAGE_ADAPTER" title="details" class="const-name">DEFAULT_PERSISTENT_STORAGE_ADAPTER</a> = 					<span class="var-type"> 'Session'</span>
+
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$_browserType" title="details" class="var-name">$_browserType</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_browserTypeClass" title="details" class="var-name">$_browserTypeClass</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_config" title="details" class="var-name">$_config</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type"><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Device.html">Zend_Http_UserAgent_Device</a></span>
+					<a href="#$_device" title="details" class="var-name">$_device</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">bool</span>
+					<a href="#$_immutable" title="details" class="var-name">$_immutable</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_loaders" title="details" class="var-name">$_loaders</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_loaderTypes" title="details" class="var-name">$_loaderTypes</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_matchLog" title="details" class="var-name">$_matchLog</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_server" title="details" class="var-name">$_server</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type"><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Storage.html">Zend_Http_UserAgent_Storage</a></span>
+					<a href="#$_storage" title="details" class="var-name">$_storage</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																												
+												<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#clearStorage" title="details" class="method-name">clearStorage</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$browser</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											([<span class="var-type">null|array|Zend_Config|ArrayAccess</span>&nbsp;<span class="var-name">$options</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getBrowserType" title="details" class="method-name">getBrowserType</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getConfig" title="details" class="method-name">getConfig</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Device.html">Zend_Http_UserAgent_Device</a></span>
+										<a href="#getDevice" title="details" class="method-name">getDevice</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getHttpAccept" title="details" class="method-name">getHttpAccept</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$httpAccept</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">Zend_Loader_PluginLoader</span>
+										<a href="#getPluginLoader" title="details" class="method-name">getPluginLoader</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getServer" title="details" class="method-name">getServer</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#getServerValue" title="details" class="method-name">getServerValue</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Storage.html">Zend_Http_UserAgent_Storage</a></span>
+										<a href="#getStorage" title="details" class="method-name">getStorage</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$browser</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getUserAgent" title="details" class="method-name">getUserAgent</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#serialize" title="details" class="method-name">serialize</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Zend_Http_UserAgent/UserAgent/Zend_Http_UserAgent.html">Zend_Http_UserAgent</a></span>
+										<a href="#setBrowserType" title="details" class="method-name">setBrowserType</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$browserType</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Zend_Http_UserAgent/UserAgent/Zend_Http_UserAgent.html">Zend_Http_UserAgent</a></span>
+										<a href="#setConfig" title="details" class="method-name">setConfig</a>
+											([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$config</span> = <span class="var-default">array()</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Zend_Http_UserAgent/UserAgent/Zend_Http_UserAgent.html">Zend_Http_UserAgent</a></span>
+										<a href="#setHttpAccept" title="details" class="method-name">setHttpAccept</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$httpAccept</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Zend_Http_UserAgent/UserAgent/Zend_Http_UserAgent.html">Zend_Http_UserAgent</a></span>
+										<a href="#setOptions" title="details" class="method-name">setOptions</a>
+											(<span class="var-type">array|Zend_Config|ArrayAccess</span>&nbsp;<span class="var-name">$options</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Zend_Http_UserAgent/UserAgent/Zend_Http_UserAgent.html">Zend_Http_UserAgent</a></span>
+										<a href="#setPluginLoader" title="details" class="method-name">setPluginLoader</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span>, <span class="var-type">string|Zend_Loader_PluginLoader</span>&nbsp;<span class="var-name">$loader</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setServer" title="details" class="method-name">setServer</a>
+											(<span class="var-type">array|ArrayAccess</span>&nbsp;<span class="var-name">$server</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setServerValue" title="details" class="method-name">setServerValue</a>
+											(<span class="var-type">string|int|float</span>&nbsp;<span class="var-name">$key</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Zend_Http_UserAgent/UserAgent/Zend_Http_UserAgent.html">Zend_Http_UserAgent</a></span>
+										<a href="#setStorage" title="details" class="method-name">setStorage</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$storage</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Zend_Http_UserAgent/UserAgent/Zend_Http_UserAgent.html">Zend_Http_UserAgent</a></span>
+										<a href="#setUserAgent" title="details" class="method-name">setUserAgent</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$userAgent</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#unserialize" title="details" class="method-name">unserialize</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$serialized</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_createDevice" title="details" class="method-name">_createDevice</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#_getUserAgentDevice" title="details" class="method-name">_getUserAgentDevice</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$browserType</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#_match" title="details" class="method-name">_match</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$deviceClass</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">Zend_Http_UserAgent_Result</span>
+										<a href="#_matchUserAgent" title="details" class="method-name">_matchUserAgent</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#_validateLoaderType" title="details" class="method-name">_validateLoaderType</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$_browserType" id="$_browserType"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_browserType</span>
+						(line <span class="line-number">74</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Browser type</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_browserTypeClass" id="$_browserTypeClass"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_browserTypeClass</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">83</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Browser type class</p>
+<p class="description"><p>Map of browser types to classes.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_config" id="$_config"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_config</span>
+			 = <span class="var-default">array(<br />        'identification_sequence' =&gt; self::DEFAULT_IDENTIFICATION_SEQUENCE,<br />        'storage'                 =&gt; array(<br />            'adapter'             =&gt; self::DEFAULT_PERSISTENT_STORAGE_ADAPTER,<br />        ),)</span>			(line <span class="line-number">93</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Array to store config</p>
+<p class="description"><p>Default values are provided to ensure specific keys are present at  instantiation.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_device" id="$_device"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Device.html">Zend_Http_UserAgent_Device</a></span>
+			<span class="var-name">$_device</span>
+						(line <span class="line-number">105</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Identified device</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_immutable" id="$_immutable"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">bool</span>
+			<span class="var-name">$_immutable</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">119</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Whether or not this instance is immutable.</p>
+<p class="description"><p>If true, none of the following may be modified: <ul><li>$_server</li><li>$_browserType</li><li>User-Agent (defined in $_server)</li><li>HTTP Accept value (defined in $_server)</li><li>$_storage</li></ul></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_loaders" id="$_loaders"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_loaders</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">125</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Plugin loaders</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_loaderTypes" id="$_loaderTypes"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_loaderTypes</span>
+			 = <span class="var-default">array('storage', 'device')</span>			(line <span class="line-number">131</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Valid plugin loader types</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_matchLog" id="$_matchLog"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_matchLog</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">138</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Trace of items matched to identify the browser type</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_server" id="$_server"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_server</span>
+						(line <span class="line-number">145</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Server variable</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_storage" id="$_storage"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Storage.html">Zend_Http_UserAgent_Storage</a></span>
+			<span class="var-name">$_storage</span>
+						(line <span class="line-number">152</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Persistent storage handler</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																			<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+										<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodclearStorage" id="clearStorage"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">clearStorage</span> (line <span class="line-number">469</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Clean the persistent storage</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			clearStorage
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$browser</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$browser</span><span class="var-description">: Browser identifier (User Agent chain)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">160</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			__construct
+		</span>
+					([<span class="var-type">null|array|Zend_Config|ArrayAccess</span>&nbsp;<span class="var-name">$options</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">null|array|Zend_Config|ArrayAccess</span>
+				<span class="var-name">$options</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetBrowserType" id="getBrowserType"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getBrowserType</span> (line <span class="line-number">578</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieve the browser type</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getBrowserType
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetConfig" id="getConfig"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getConfig</span> (line <span class="line-number">479</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get user configuration</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getConfig
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetDevice" id="getDevice"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getDevice</span> (line <span class="line-number">539</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the device object</p>
+<p class="description"><p>This is the object that will contain the various discovered device  capabilities.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Device.html">Zend_Http_UserAgent_Device</a></span>
+		<span class="method-name">
+			getDevice
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetHttpAccept" id="getHttpAccept"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getHttpAccept</span> (line <span class="line-number">390</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the HTTP Accept server param</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getHttpAccept
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$httpAccept</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$httpAccept</span><span class="var-description">: (option) forced HTTP Accept chain</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetPluginLoader" id="getPluginLoader"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getPluginLoader</span> (line <span class="line-number">762</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get a plugin loader</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">Zend_Loader_PluginLoader</span>
+		<span class="method-name">
+			getPluginLoader
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$type</span><span class="var-description">: A valid plugin loader type; see <a href="../../Zend_Http_UserAgent/UserAgent/Zend_Http_UserAgent.html#var$_loaderTypes">$_loaderTypes</a></span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetServer" id="getServer"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getServer</span> (line <span class="line-number">613</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieve the &quot;$_SERVER&quot; array</p>
+<p class="description"><p>Basically, the $_SERVER array or an equivalent container storing the  data that will be introspected.</p><p>If the value has not been previously set, it sets itself from the  $_SERVER superglobal.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getServer
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetServerValue" id="getServerValue"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getServerValue</span> (line <span class="line-number">673</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieve a server value</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			getServerValue
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetStorage" id="getStorage"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getStorage</span> (line <span class="line-number">422</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the persistent storage handler</p>
+<p class="description"><p>Session storage is used by default unless a different storage adapter  has been set via the &quot;persistent_storage_adapter&quot; key. That key should  contain either a fully qualified class name, or a short name that  resolves via the plugin loader.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Storage.html">Zend_Http_UserAgent_Storage</a></span>
+		<span class="method-name">
+			getStorage
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$browser</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$browser</span><span class="var-description">: Browser identifier (User Agent chain)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetUserAgent" id="getUserAgent"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getUserAgent</span> (line <span class="line-number">362</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the User Agent value</p>
+<p class="description"><p>If $userAgent param is null, the value of $_server['HTTP_USER_AGENT'] is  returned.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getUserAgent
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodserialize" id="serialize"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">serialize</span> (line <span class="line-number">172</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Serialized representation of the object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			serialize
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt>Serializable::serialize</dt>
+					</dl>
+			
+	</div>
+<a name="methodsetBrowserType" id="setBrowserType"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setBrowserType</span> (line <span class="line-number">589</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the browser &quot;type&quot;</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Zend_Http_UserAgent/UserAgent/Zend_Http_UserAgent.html">Zend_Http_UserAgent</a></span>
+		<span class="method-name">
+			setBrowserType
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$browserType</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$browserType</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetConfig" id="setConfig"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setConfig</span> (line <span class="line-number">503</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Config parameters is an Array or a Zend_Config object</p>
+<p class="description"><p>The allowed parameters are : <ul><li>the identification sequence (can be empty) =&gt; desktop browser type is the</li></ul> default browser type returned  $config['identification_sequence'] : ',' separated browser types <ul><li>the persistent storage adapter</li></ul> $config['persistent_storage_adapter'] = &quot;Session&quot; or &quot;NonPersistent&quot; <ul><li>to add or replace a browser type device</li></ul> $config[(type)]['device']['path']  $config[(type)]['device']['classname'] <ul><li>to add or replace a browser type features adapter</li></ul> $config[(type)]['features']['path']  $config[(type)]['features']['classname']</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Zend_Http_UserAgent/UserAgent/Zend_Http_UserAgent.html">Zend_Http_UserAgent</a></span>
+		<span class="method-name">
+			setConfig
+		</span>
+					([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$config</span> = <span class="var-default">array()</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$config</span><span class="var-description">: (option) Config array</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetHttpAccept" id="setHttpAccept"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setHttpAccept</span> (line <span class="line-number">405</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Force or replace the HTTP_ACCEPT chain in self::$_server variable</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Zend_Http_UserAgent/UserAgent/Zend_Http_UserAgent.html">Zend_Http_UserAgent</a></span>
+		<span class="method-name">
+			setHttpAccept
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$httpAccept</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$httpAccept</span><span class="var-description">: Forced HTTP Accept chain</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetOptions" id="setOptions"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setOptions</span> (line <span class="line-number">217</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Configure instance</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Zend_Http_UserAgent/UserAgent/Zend_Http_UserAgent.html">Zend_Http_UserAgent</a></span>
+		<span class="method-name">
+			setOptions
+		</span>
+					(<span class="var-type">array|Zend_Config|ArrayAccess</span>&nbsp;<span class="var-name">$options</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array|Zend_Config|ArrayAccess</span>
+				<span class="var-name">$options</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetPluginLoader" id="setPluginLoader"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setPluginLoader</span> (line <span class="line-number">714</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set plugin loader</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Zend_Http_UserAgent/UserAgent/Zend_Http_UserAgent.html">Zend_Http_UserAgent</a></span>
+		<span class="method-name">
+			setPluginLoader
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span>, <span class="var-type">string|Zend_Loader_PluginLoader</span>&nbsp;<span class="var-name">$loader</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$type</span><span class="var-description">: Type of plugin loader; one of 'storage', (?)</span>			</li>
+					<li>
+				<span class="var-type">string|Zend_Loader_PluginLoader</span>
+				<span class="var-name">$loader</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetServer" id="setServer"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setServer</span> (line <span class="line-number">631</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the &quot;$_SERVER&quot; array</p>
+<p class="description"><p>Basically, the $_SERVER array or an equivalent container storing the  data that will be introspected.</p></p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> Zend_Http_UserAgent_Exception on invalid parameter</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setServer
+		</span>
+					(<span class="var-type">array|ArrayAccess</span>&nbsp;<span class="var-name">$server</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array|ArrayAccess</span>
+				<span class="var-name">$server</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetServerValue" id="setServerValue"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setServerValue</span> (line <span class="line-number">692</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set a server value</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setServerValue
+		</span>
+					(<span class="var-type">string|int|float</span>&nbsp;<span class="var-name">$key</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string|int|float</span>
+				<span class="var-name">$key</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$value</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetStorage" id="setStorage"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setStorage</span> (line <span class="line-number">450</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the persistent storage handler</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Zend_Http_UserAgent/UserAgent/Zend_Http_UserAgent.html">Zend_Http_UserAgent</a></span>
+		<span class="method-name">
+			setStorage
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$storage</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../Zend_Http/UserAgent/Zend_Http_UserAgent_Storage.html">Zend_Http_UserAgent_Storage</a></span>
+				<span class="var-name">$storage</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetUserAgent" id="setUserAgent"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setUserAgent</span> (line <span class="line-number">378</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Force or replace the UA chain in $_server variable</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Zend_Http_UserAgent/UserAgent/Zend_Http_UserAgent.html">Zend_Http_UserAgent</a></span>
+		<span class="method-name">
+			setUserAgent
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$userAgent</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$userAgent</span><span class="var-description">: Forced UserAgent chain</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodunserialize" id="unserialize"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">unserialize</span> (line <span class="line-number">192</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Unserialize a previous representation of the object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			unserialize
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$serialized</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$serialized</span>			</li>
+				</ul>
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt>Serializable::unserialize</dt>
+					</dl>
+			
+	</div>
+<a name="method_createDevice" id="_createDevice"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_createDevice</span> (line <span class="line-number">847</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Creates device object instance</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_createDevice
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_getUserAgentDevice" id="_getUserAgentDevice"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_getUserAgentDevice</span> (line <span class="line-number">312</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Loads class for a user agent device</p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> Zend_Loader_PluginLoader_Exception if unable to load UA device</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			_getUserAgentDevice
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$browserType</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$browserType</span><span class="var-description">: Browser type</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_match" id="_match"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_match</span> (line <span class="line-number">284</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Comparison of the UserAgent chain and browser signatures.</p>
+<p class="description"><p>The comparison is case-insensitive : the browser signatures must be in lower  case</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			_match
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$deviceClass</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$deviceClass</span><span class="var-description">: Name of class against which a match will be attempted</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_matchUserAgent" id="_matchUserAgent"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_matchUserAgent</span> (line <span class="line-number">804</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Run the identification sequence to match the right browser type according to the  user agent</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">Zend_Http_UserAgent_Result</span>
+		<span class="method-name">
+			_matchUserAgent
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_validateLoaderType" id="_validateLoaderType"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_validateLoaderType</span> (line <span class="line-number">782</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Validate a plugin loader type</p>
+<p class="description"><p>Verifies that it is in <a href="../../Zend_Http_UserAgent/UserAgent/Zend_Http_UserAgent.html#var$_loaderTypes">$_loaderTypes</a>, and returns a normalized  version of the type.</p></p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> Zend_Http_UserAgent_Exception on invalid type</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			_validateLoaderType
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$type</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	<a name="sec-consts"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constants</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Constants</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="constDEFAULT_BROWSER_TYPE" id="DEFAULT_BROWSER_TYPE"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">DEFAULT_BROWSER_TYPE</span>
+			 = <span class="const-default"> 'desktop'</span>
+			(line <span class="line-number">52</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">'desktop' by default if the sequence return false for each item</p>
+	
+	
+</div>
+<a name="constDEFAULT_HTTP_ACCEPT" id="DEFAULT_HTTP_ACCEPT"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">DEFAULT_HTTP_ACCEPT</span>
+			 = <span class="const-default"> &quot;application/xhtml+xml&quot;</span>
+			(line <span class="line-number">62</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Default Http Accept param to prevent empty value</p>
+	
+	
+</div>
+<a name="constDEFAULT_HTTP_USER_AGENT" id="DEFAULT_HTTP_USER_AGENT"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">DEFAULT_HTTP_USER_AGENT</span>
+			 = <span class="const-default"> 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'</span>
+			(line <span class="line-number">57</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Default User Agent chain to prevent empty value</p>
+	
+	
+</div>
+<a name="constDEFAULT_IDENTIFICATION_SEQUENCE" id="DEFAULT_IDENTIFICATION_SEQUENCE"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">DEFAULT_IDENTIFICATION_SEQUENCE</span>
+			 = <span class="const-default"> 'mobile,desktop'</span>
+			(line <span class="line-number">42</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">'desktop' by default if the sequence return false for each item or is empty</p>
+	
+	
+</div>
+<a name="constDEFAULT_MARKUP_LANGUAGE" id="DEFAULT_MARKUP_LANGUAGE"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">DEFAULT_MARKUP_LANGUAGE</span>
+			 = <span class="const-default"> &quot;xhtml&quot;</span>
+			(line <span class="line-number">67</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Default markup language</p>
+	
+	
+</div>
+<a name="constDEFAULT_PERSISTENT_STORAGE_ADAPTER" id="DEFAULT_PERSISTENT_STORAGE_ADAPTER"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">DEFAULT_PERSISTENT_STORAGE_ADAPTER</span>
+			 = <span class="const-default"> 'Session'</span>
+			(line <span class="line-number">47</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Default persitent storage adapter : Session or NonPersitent</p>
+	
+	
+</div>
+						
+		</div>
+	</div>
+
+	<p class="notes" id="credit">
+		Documentation generated on Sat, 30 Apr 2011 12:27:52 +0530 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

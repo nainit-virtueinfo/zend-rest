@@ -1,0 +1,53 @@
+Install Steps :-
+
+1> Go to web root from Terminal. Get zend package from git repository enter command
+	git clone https://developer@intra.vendep.com/git/zend-rest
+
+2> after getting package from git create virtual host
+	<VirtualHost *:80>
+	  ServerName server_name
+	  DocumentRoot "/path/to/git/clone/package/public"
+	  DirectoryIndex index.php
+	  <Directory "/path/to/git/clone/package/public">
+	AllowOverride All   
+	Allow from All
+	  </Directory>
+	</VirtualHost>
+	
+3> Zend Framework can be downloaded from http://framework.zend.com/download/latest in either .zip or .tar.gz
+format. Look at the bottom of the page for direct links. The “Minimal” version is what you need.
+Download Zend Framework Version: 1.11.5.
+
+4> Copy the bin folder from ZendFramework-1.11.5-minimal.zip to the path/to/git/clone/package/ folder.Now bin folder is parallel to library folder.
+
+5> Copy the library/Zend folders from ZendFramework-1.11.5-minimal.zip to the path/to/git/clone/package/library/ folder.
+
+6>  Edit your bash proﬁle to provide an alias:
+	• From Terminal, type: open ~/.bash_profile
+	• Add alias zf= path/to/git/clone/package/bin/zf.sh to the end of the ﬁle
+	• Save and exit TextEdit.
+	• Exit Terminal.
+7> You can test your installation of the Zend_Tool command line interface by opening a Terminal or Command Prompt and typing:
+	zf show version
+	
+	If all has worked, you should see:
+		Zend Framework Version: 1.11.5
+
+	If not, then check you set up the path correctly and that the bin directory exists in the path/to/git/clone/package/ directory. 
+	Once the zf tool is working, zf --help will show you all the commands available.
+
+8> After successful zend istallation now change path/to/git/clone/package/application/configs/application.ini
+	line Number 11  constants.REST_SERVER_URI = "http://domian name/restserver" You have to specify your domain name for accessing your rest server.
+	line Number 27  doctrine.dsn = "mysql://username:password@localhost/database_name" This is for MySQL database connection.
+
+9> Then go to Terminal or Command Prompt go to path/to/git/clone/package/ run the following command
+	
+	9.1>  ./application/scripts/doctrine create-db        # for creating database
+	9.2>  ./application/scripts/doctrine create-tables    # for creating database tables
+	9.3>  ./application/scripts/doctrine load-data        # for load initial data
+	
+10> Now access your domain from browser. You can see login screen.
+
+11> For login use following credential.
+	  Email    : kalpesh@virtueinfo.com
+	  password : kalpesh12

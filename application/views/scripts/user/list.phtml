@@ -1,0 +1,57 @@
+<?php
+$this->headTitle()->append('User');
+?>
+
+<div class="RightContent">
+	<div class="ContentBox" >
+		<h3 id="click_here"><?php echo $this->translate('User List');?></h3>
+		<div class="ContentData" id="div1">
+			<div class="clearb borderRight">
+				<ul id="countrytabs" class="shadetabs"></ul> 
+				<div class="tabingBox">
+					<div id="country1" class="tabcontent" style="display:">
+						<div class="TableContainer">
+							<table width="100%" border="0" cellspacing="0" cellpadding="5">
+								<thead>
+									<tr>
+										<th width="60%"><?php echo $this->translate('Name');?></th>
+										<th width="20%" class="Tcenter"><?php echo $this->translate('Edit');?></th>
+										<th width="20%" class="Tcenter"><?php echo $this->translate('Delete');?></th>
+									</tr>
+								</thead>
+								<tbody>
+									<?php 
+									if(count($this->paginator) > 0 ):
+									foreach($this->paginator as $user): 
+									?>
+									<tr class="odd">
+										<th width="60%"> <?php echo $user['email'];?></th>
+										<th width="20%" class="Tcenter">
+											<a href="<?php echo $this->url(array('controller'=>'user','action'=>'addedit', 'id'=>$user['id_user']));?>" title="Edit">
+											  <img src="/images/1286256291_edit.png"/>
+											</a>
+										</th>
+										<th width="20%" class="Tcenter">
+											<a href="<?php echo $this->url(array('controller'=>'user','action'=>'delete', 'id'=>$user['id_user']));?>" title="Delete" class="deleteIcon">
+												<img src="/images/1286256515_dialog-close.png"/>
+											</a>
+										</th>
+									</tr>
+									<?php endforeach; ?>
+									<?php else: ?>
+									<tr>
+										<th width="100%" class="Tcenter"><?php echo "No record forund"?></th>
+									</tr>
+									<?php endif;?>
+								</tbody>
+							</table>
+						</div>
+						<?php echo $this->paginationControl($this->paginator,'Sliding','/user/pagination.phtml');?>
+					</div>
+					<div class="clearb"></div>
+				</div>
+			</div>
+			<div class="clearb"><div></div></div>
+		</div>
+	</div>
+</div>

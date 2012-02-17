@@ -1,0 +1,73 @@
+<script type="text/javascript">
+function validate()
+{
+    alert('hello');
+    return false;
+    var p = document.forms['personal'];
+ 
+    var JSONObject = new Object;
+    JSONObject.firstname = p['firstname'].value;
+    JSONObject.email = p['email'].value;
+    JSONObject.hobby = new Array;
+ 
+    for(var i=0; i<3; i++)
+    {
+        JSONObject.hobby[i] = new Object;
+        JSONObject.hobby[i].hobbyName = p['hobby'][i].value;
+        JSONObject.hobby[i].isHobby = p['hobby'][i].checked;
+    }
+    JSONstring = JSON.stringify(JSONObject);
+    runAjax(JSONstring);
+}
+
+function searchList(ssField,ssOrder,page)
+{
+	if(ssField == 'id_category')
+		var dataString = 'ssShowall=all';		
+	else
+		var dataString = 'ssSortOn='+ssField+'&ssSortBy='+ssOrder+'&ssSearchWord='+$('#ssWord').val()+'&page='+page;
+	$.ajax
+	({
+		type: 'POST',
+		url: '/admin/category/list',
+		data: dataString,
+		success: function(data)
+		{
+			//$('#searchWord').val($('#ssWord').val());	
+			$('#catList').html(data);			
+		}
+	});
+	return false;
+}
+</script>
+<?php
+
+//$oNewSlider = new ZendX_JQuery_View_Helper_AjaxLink();
+//echo $this->ajaxLink('title is here','/admin/Category/list.php',array('update'=>'tempDiv','method'=>'POST'));
+?>
+<div id="tempDiv"></div>
+<div class="RightContent">
+	<div class="ContentBox" >
+		<h3 id="click_here">Manage Category</h3>
+		<div class="ContentData" id="div1">
+			<div class="clearb borderRight">
+				<ul id="countrytabs" class="shadetabs"></ul> 
+				<div id="tempDiv"></div>
+				<div class="tabingBox">
+					<div id="country1" class="tabcontent" style="display:">
+						<div class="TableContainer">
+						<form name="frm3" method="post" action="/admin/category/list" onSubmit="return searchList('category_name','asc')">
+							<div id="catList">
+							<?= $this->render('/category/renderlist.phtml', array('paginator'=>$this->paginator))?>
+							</div>
+						</form>
+						</div>
+						<?php //echo $this->paginationControl($this->paginator,'Sliding','/category/pagination.phtml');?>
+					</div>
+					<div class="clearb"></div>
+				</div>
+			</div>
+			<div class="clearb"><div></div></div>
+		</div>
+	</div>
+</div>

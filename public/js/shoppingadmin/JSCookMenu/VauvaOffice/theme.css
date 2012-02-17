@@ -1,0 +1,256 @@
+/*
+ * VauvaOffice Style Sheet
+ * by Ian Reyes and Heng Yuan
+ */
+
+
+.VauvaOfficeMenu,.VauvaOfficeSubMenuTable
+{
+	font-family: Tahoma;
+	font-size: 12px;
+
+	color: white;
+
+	cursor:		pointer;
+	cursor:		pointer !important;
+	white-space:	nowrap;
+}
+
+.VauvaOfficeSubMenu
+{
+	position:	absolute;
+	display:	block;
+	visibility:	hidden;
+	overflow:	hidden;
+	padding:5px;
+	margin-top:-2px;
+	border:#999999 solid;
+	border-width:0px 1px 1px 0px;
+	background:url(../../../../js/admin/JSCookMenu/VauvaOffice/sub-menu-bg.jpg) left top repeat-y;
+	margin-left:5px;
+}
+
+.VauvaOfficeSubMenuTable
+{
+
+}
+
+.VauvaOfficeMenuItem,.VauvaOfficeMenuItemHover,.VauvaOfficeMenuItemActive
+{
+	cursor:		default;
+	cursor:		pointer !important;
+	white-space:	nowrap;
+}
+
+.VauvaOfficeMainItem /*main menu*/
+{
+	padding:	8px 5px 8px 5px;
+	border:		0px solid #ffffff;
+	color:#3d3d3d;
+	font-weight:bold;
+}
+
+.VauvaOfficeMenuItem
+{
+	border:1px solid #ffffff;
+	color:#333333;
+	/*background-color:#70e6ff;*/
+}
+
+.VauvaOfficeMainItemHover,
+.VauvaOfficeMainItemActive,
+.VauvaOfficeMainItemSelected /*main rollover*/
+{
+	padding:	8px 5px 8px 5px;
+	border:		0px solid #ffffff;
+	color:#ffffff;
+	font-weight:bold;
+	background-color:#FFFFF;
+}
+
+.VauvaOfficeMenuItemHover,
+.VauvaOfficeMenuItemActive
+{
+
+	border:		1px solid #ffffff;
+	/*background-color:	#05c6fd;*/
+	color: #333333;
+}
+
+/* horizontal main menu sub components */
+/* panel doesn't really support horizontal menus */
+/* there are simpler approaches, but the setting here allows me to
+   set a background image for the menu without lines all over it */  
+.VauvaOfficeMainItemSelected .VauvaOfficeMainItemLeft, .VauvaOfficeMainItemSelected .VauvaOfficeMainFolderLeft,
+.VauvaOfficeMainItemHover .VauvaOfficeMainItemLeft,.VauvaOfficeMainItemHover .VauvaOfficeMainFolderLeft
+{background:url(../../../../js/admin/JSCookMenu/VauvaOffice/m-left.jpg) left top no-repeat; padding:7px 0px;} 
+.VauvaOfficeMainItemSelected .VauvaOfficeMainItemRight, .VauvaOfficeMainItemSelected .VauvaOfficeMainFolderRight,
+.VauvaOfficeMainItemHover .VauvaOfficeMainItemRight, .VauvaOfficeMainItemHover .VauvaOfficeMainFolderRight
+{background:url(../../../../js/admin/JSCookMenu/VauvaOffice/m-right.jpg) right top no-repeat; padding:7px 0px;} 
+.VauvaOfficeMainItemSelected .VauvaOfficeMainItemText, .VauvaOfficeMainItemSelected .VauvaOfficeMainFolderText,
+.VauvaOfficeMainItemHover .VauvaOfficeMainItemText, .VauvaOfficeMainItemHover .VauvaOfficeMainFolderText
+{background:url(../../../../js/admin/JSCookMenu/VauvaOffice/m-center.jpg) left top repeat-x; padding:7px 0px;}
+
+
+
+.VauvaOfficeMenuItemSelected .VauvaOfficeMainItemLeft, .VauvaOfficeMenuItemSelected .VauvaOfficeMainFolderLeft,
+.VauvaOfficeMenuItemHover .VauvaOfficeMenuItemLeft,.VauvaOfficeMenuItemHover .VauvaOfficeMainFolderLeft
+{background:url(../../../../js/admin/JSCookMenu/VauvaOffice/m-left.jpg) left top no-repeat; padding:7px 0px;} 
+.VauvaOfficeMenuItemSelected .VauvaOfficeMenuItemRight, .VauvaOfficeMenuItemSelected .VauvaOfficeMainFolderRight,
+.VauvaOfficeMenuItemHover .VauvaOfficeMenuItemRight, .VauvaOfficeMenuItemHover .VauvaOfficeMainFolderRight
+{background:url(../../../../js/admin/JSCookMenu/VauvaOffice/m-right.jpg) right top no-repeat; padding:7px 0px;} 
+.VauvaOfficeMenuItemSelected .VauvaOfficeMenuItemText, .VauvaOfficeMenuItemSelected .VauvaOfficeMainFolderText,
+.VauvaOfficeMenuItemHover .VauvaOfficeMenuItemText, .VauvaOfficeMenuItemHover .VauvaOfficeMainFolderText
+{background:url(../../../../js/admin/JSCookMenu/VauvaOffice/m-center.jpg) left top repeat-x; padding:7px 0px;}
+
+
+   
+.VauvaOfficeMainFolderText, .VauvaOfficeMainItemText
+{padding-left:0px; padding-right:0px;}
+
+.VauvaOfficeMainFolderLeft,
+.VauvaOfficeMainItemLeft,
+.VauvaOfficeMainFolderText,
+.VauvaOfficeMainItemText,
+.VauvaOfficeMainItemRight,
+.VauvaOfficeMainFolderRight
+{
+	border: 0;
+	background-color: inherit;
+	white-space: nowrap;
+}
+
+/* sub menus sub components */
+
+.VauvaOfficeMenuFolderLeft,
+.VauvaOfficeMenuItemLeft
+{
+	padding:	6px 0px 6px 6px;
+	border:		1;
+	white-space:	nowrap;
+
+}
+.VauvaOfficeMenuFolderLeftHover,
+.VauvaOfficeMenuItemLeftHover
+{
+	padding:	6px 0px 6px 6px;
+	border:		1;
+	white-space:	nowrap;
+	/*background-color:	#DDE1E6;*/
+}
+
+.VauvaOfficeMenuFolderText,
+.VauvaOfficeMenuItemText
+{
+	padding:	7px 10px 7px 15px!important;
+
+	/*border:	#CCCCCC	solid;*/
+	background:url(../../../../js/admin/JSCookMenu/VauvaOffice/border.jpg) left top repeat-x;
+	border-width:1px 0px 0px 0px;
+	white-space:	nowrap;
+	
+}
+
+.VauvaOfficeMenuItemRight,
+.VauvaOfficeMenuFolderRight
+{
+	padding:	6px 2px 6px 0px;
+	border:0px;
+	white-space:	nowrap;
+	background-color:	inherit;
+}
+
+
+/* hoover and active border */
+.VauvaOfficeMenuItemHover .VauvaOfficeMenuFolderLeft,
+.VauvaOfficeMenuItemActive .VauvaOfficeMenuFolderLeft,
+.VauvaOfficeMenuItemHover .VauvaOfficeMenuItemLeft,
+.VauvaOfficeMenuItemActive .VauvaOfficeMenuItemLeft,
+.VauvaOfficeMenuItemHover .VauvaOfficeMenuFolderText,
+.VauvaOfficeMenuItemActive .VauvaOfficeMenuFolderText,
+.VauvaOfficeMenuItemHover .VauvaOfficeMenuItemText,
+.VauvaOfficeMenuItemActive .VauvaOfficeMenuItemText,
+.VauvaOfficeMenuItemHover .VauvaOfficeMenuFolderRight,
+.VauvaOfficeMenuItemActive .VauvaOfficeMenuFolderRight,
+.VauvaOfficeMenuItemHover .VauvaOfficeMenuItemRight,
+.VauvaOfficeMenuItemActive .VauvaOfficeMenuItemRight
+{
+	border-color:	#FFFFFF;
+	color:#ffffff;
+}
+
+.VauvaOfficeMenuItemHover .VauvaOfficeMenuFolderLeft,
+.VauvaOfficeMenuItemActive .VauvaOfficeMenuFolderLeft,
+.VauvaOfficeMenuItemHover .VauvaOfficeMenuItemLeft,
+.VauvaOfficeMenuItemActive .VauvaOfficeMenuItemLeft
+{
+	border-width:	0px;
+	border-style:	solid;
+	
+}
+
+.VauvaOfficeMenuItemHover .VauvaOfficeMenuFolderText,
+.VauvaOfficeMenuItemActive .VauvaOfficeMenuFolderText,
+.VauvaOfficeMenuItemHover .VauvaOfficeMenuItemText,
+.VauvaOfficeMenuItemActive .VauvaOfficeMenuItemText
+{
+	border-width:	0px;
+	border-style:	solid;
+	
+}
+
+.VauvaOfficeMenuItemHover .VauvaOfficeMenuFolderRight,
+.VauvaOfficeMenuItemActive .VauvaOfficeMenuFolderRight,
+.VauvaOfficeMenuItemHover .VauvaOfficeMenuItemRight,
+.VauvaOfficeMenuItemActive .VauvaOfficeMenuItemRight
+{
+	border-width:	0px 0px 0px 0px;
+	border-style:	solid;
+}
+
+td.VauvaOfficeMenuSplit
+{
+	padding:	0px;
+	margin:		0px;
+	height:		5px;
+	border:		0px;
+	background-color:	inherit;
+	overflow:	hidden;
+}
+
+div.VauvaOfficeMenuSplit
+{
+	margin: 2px;
+	height: 1px;
+	overflow: hidden;
+	background-color: #FFFFFF;
+	border-top: 1px solid #9C9A9C;
+}
+
+/* image shadow animation */
+
+/*
+	seq1:	image for normal
+	seq2:	image for hover and active
+
+	To use, in the icon field, input the following:
+	<img class="seq1" src="normal.gif" /><img class="seq2" src="hover.gif" />
+*/
+
+.VauvaOfficeMenuItem img.seq1
+{
+	display:	inline;
+}
+
+.VauvaOfficeMenuItemHover seq2,
+.VauvaOfficeMenuItemActive seq2
+{
+	display:	inline;
+}
+
+.VauvaOfficeMenuItem .seq2,
+.VauvaOfficeMenuItemHover .seq1,
+.VauvaOfficeMenuItemActive .seq1
+{
+	display:	none;
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset>
+  <users id_user="1" first_name="Shashank" last_name="Patel" password="ce5dbaa2911e2e8d51af63794517bfe8" email="shashank@virtueinfo.com"  city="Ahmedabad"/> 
+  <users id_user="2" first_name="Test" last_name="Test" password="098f6bcd4621d373cade4e832627b4f6" email="test@gmail.com"  city="TestCity"/> 
+  <users id_user="3" first_name="Rashmi" last_name="Upadhyay" password="098f6bcd4621d373cade4e832627b4f6" email="rashmi@virtueinfo.com"  city="Ahmedabad"/> 
+</dataset>

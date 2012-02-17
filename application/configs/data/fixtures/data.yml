@@ -1,0 +1,43 @@
+Model_Users:
+  User_1:
+    id_user:    1
+    email:      sanjayrathod@virtueinfo.com
+    password:   d147098b6789c5bc75c13cafad8aea1c
+    first_name: Sanjay
+    last_name:  Rathod
+    city:       Ahmedabad
+  User_2:
+    id_user:    2
+    email:      shashank@virtueinfo.com
+    password:   c33ade4e16434e64b84b6edc093982e4
+    first_name: Shashank
+    last_name:  Patel
+    city:       Ahmedabad
+  User_3:
+    id_user:    3
+    email:      kalpesh@virtueinfo.com
+    password:   23a15270f8e60b0ada9055b86630bb87
+    first_name: Kalpesh
+    last_name:  Patel
+    city:       Ahmedabad
+  User_4:
+    id_user:    4
+    email:      arpita@virtueinfo.com
+    password:   2fc811d48391007f6dabb45c09ffabdb
+    first_name: Arpita
+    last_name:  Rana
+    city:       Sanad
+  User_5:
+    id_user:    5
+    email:      punam@virtueinfo.com
+    password:   d3c2109bcb072272f5d931943626728d
+    first_name: Punam
+    last_name:  Punam
+    city:       Sanad
+  User_6:
+    id_user:    6
+    email:      rashmi@virtueinfo.com
+    password:   a10dad6963f0d04b21f546d7753a6db6
+    first_name: rashmi
+    last_name:  upadhyay
+    city:       Sanad

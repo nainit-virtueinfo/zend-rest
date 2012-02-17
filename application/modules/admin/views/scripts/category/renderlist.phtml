@@ -1,0 +1,61 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="5" >
+    <thead>
+        <tr>
+        <th width="60%">Search For
+        <input type="text" name="ssWord" id="ssWord" value="<?php echo $this->ssSearchWord?>"/>
+        <input type="submit" name="searchKey" value="search"/>
+        <?php //echo $this->ajaxLink('Search','/admin/category/list',array('update'=>'#catList','method'=>'POST'),array('ssSearchKey'=>'search'));?>
+        <?php //echo $this->ajaxLink('Show all','/admin/category/list',array('update'=>'#catList','method'=>'POST'),array('ssShowall'=>'all'));
+        ?>
+        <a href="<?php
+                echo $this->url(array('controller'=>'category','action'=>'list'));?>" onClick="return searchList('id_category','asc')">
+                Show all
+        </a>
+        </th>
+        </tr>
+        <tr>
+            <th width="60%">Name
+                <a href="<?php
+                echo $this->url(array('controller'=>'category','action'=>'list'));?>" onClick="return searchList('category_name','asc')">
+                  <img src="/images/admin/up.gif"/>
+            </a>
+            <a href="<?php
+                echo $this->url(array('controller'=>'category','action'=>'list'));?>" onClick="return searchList('category_name','desc')">
+                  <img src="/images/admin/down.gif"/>
+            </a>
+            <?php /*echo $this->ajaxLink('<img src="/images/admin/up.gif"/>','/admin/category/list',
+                             array('update'=>'#catList','method'=>'POST'),array('ssSortBy'=>'asc','ssSortOn'=>'category_name'));?>
+            <?php echo $this->ajaxLink('<img src="/images/admin/down.gif"/>','/admin/category/list',
+                             array('update'=>'#catList','method'=>'POST'),array('ssSortBy'=>'desc','ssSortOn'=>'category_name'));*/?>
+            </th>
+            <th width="20%" class="Tcenter">Edit</th>
+            <th width="20%" class="Tcenter">Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php 
+        if(count($this->paginator) > 0 ):
+        foreach($this->paginator as $snuser=>$user):?>
+        <tr class="odd">
+            <th width="60%"><?php echo $user['category_name'];?></th>
+            <th width="20%" class="Tcenter">
+                <a href="<?php 
+                echo $this->url(array('controller'=>'category','action'=>'addedit', 'id'=>$user['id_category']));?>" title="Edit">
+                <img src="/images/1286256291_edit.png"/>
+                </a>
+            </th>
+            <th width="20%" class="Tcenter">
+                <a href="<?php echo $this->url(array('controller'=>'category','action'=>'delete', 'id'=>$user['id_category']));?>" title="Delete" class="deleteIcon">
+                <img src="/images/1286256515_dialog-close.png"/>
+                </a>
+            </th>
+        </tr>
+        <?php endforeach; ?>
+        <?php else: ?>
+        <tr>
+            <th width="100%" class="Tcenter"><?php echo "No record forund"?></th>
+        </tr>
+        <?php endif;?>
+    </tbody>
+</table>
+<?php echo $this->paginationControl($this->paginator,'Sliding','/category/pagination.phtml');?>

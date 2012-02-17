@@ -1,0 +1,31 @@
+<?php $this->headTitle()->append('Login'); ?>
+<form name="logins" method="post" action="logincheck">
+	<div class="loginbox">
+		<div class="LoginInnerPad">
+			<div class="LoginHeading"><img src="/images/userlogin-heading.png" alt="" width="229" height="87" /></div>
+			<div class="LoginRow">
+			  <tr>
+				<?php
+					if(isset($this->errorMessage)){
+						echo $this->errorMessage;
+					}
+				?>
+				<td><?php echo $this->form->email->renderErrors()?></td>
+				<td><?php echo $this->form->email->renderLabel()?></td>
+				<td ><?php echo $this->form->email->renderViewHelper();?></td>
+			  </tr>
+			  <tr>
+				<td><?php echo $this->form->password->renderErrors()?></td>
+				<td><?php echo $this->form->password->renderLabel()?></td>
+				<td><?php echo $this->form->password->renderViewHelper();?></td>
+			  </tr>	
+			  
+			<div class="LoginRow">
+			<input class="loginBTN" id="submitbutton" name="submit" value="Login" type="submit" />
+            <label><input name="remember" class="checkbox" type="checkbox" value="" />Remember Password &nbsp;|&nbsp;
+            <a href="<?php echo $this->url(array('controller'=>'login','action'=>'forgotpassword'));?>">Forgot password</a>
+            </label>
+			</div>
+		</div>
+	</div>
+</form>

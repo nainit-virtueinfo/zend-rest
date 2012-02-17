@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Zend_Auth_Adapter_Ldap</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Zend_Auth_Adapter_Ldap</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+                <p class="implements">
+            Implements interfaces:
+            <ul>
+                <li><a href="../../Zend_Auth/Zend_Auth_Adapter/Zend_Auth_Adapter_Interface.html">Zend_Auth_Adapter_Interface</a></li>            </ul>
+        </p>
+        		<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">copyright:</span> Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)</li>
+				<li><span class="field">license:</span> <a href="http://framework.zend.com/license/new-bsd">New BSD License</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_Adapter---Ldap.php.html">/Adapter/Ldap.php</a> (line <span class="field">35</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$_authenticatedDn" title="details" class="var-name">$_authenticatedDn</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">Zend_Ldap</span>
+					<a href="#$_ldap" title="details" class="var-name">$_ldap</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_options" title="details" class="var-name">$_options</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$_password" title="details" class="var-name">$_password</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$_username" title="details" class="var-name">$_username</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																				
+												<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$options</span> = <span class="var-default">array()</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$username</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$password</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Zend_Auth/Zend_Auth_Result.html">Zend_Auth_Result</a></span>
+										<a href="#authenticate" title="details" class="method-name">authenticate</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">stdClass|boolean</span>
+										<a href="#getAccountObject" title="details" class="method-name">getAccountObject</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$returnAttribs</span> = <span class="var-default">array()</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$omitAttribs</span> = <span class="var-default">array()</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">Zend_Ldap</span>
+										<a href="#getLdap" title="details" class="method-name">getLdap</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array|null</span>
+										<a href="#getOptions" title="details" class="method-name">getOptions</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string|null</span>
+										<a href="#getPassword" title="details" class="method-name">getPassword</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string|null</span>
+										<a href="#getUsername" title="details" class="method-name">getUsername</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Zend_Auth/Zend_Auth_Adapter/Zend_Auth_Adapter_Ldap.html">Zend_Auth_Adapter_Ldap</a></span>
+										<a href="#setCredential" title="details" class="method-name">setCredential</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$credential</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Zend_Auth/Zend_Auth_Adapter/Zend_Auth_Adapter_Ldap.html">Zend_Auth_Adapter_Ldap</a></span>
+										<a href="#setIdentity" title="details" class="method-name">setIdentity</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$identity</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Zend_Auth/Zend_Auth_Adapter/Zend_Auth_Adapter_Ldap.html">Zend_Auth_Adapter_Ldap</a></span>
+										<a href="#setLdap" title="details" class="method-name">setLdap</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$ldap</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Zend_Auth/Zend_Auth_Adapter/Zend_Auth_Adapter_Ldap.html">Zend_Auth_Adapter_Ldap</a></span>
+										<a href="#setOptions" title="details" class="method-name">setOptions</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$options</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Zend_Auth/Zend_Auth_Adapter/Zend_Auth_Adapter_Ldap.html">Zend_Auth_Adapter_Ldap</a></span>
+										<a href="#setPassword" title="details" class="method-name">setPassword</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$password</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Zend_Auth/Zend_Auth_Adapter/Zend_Auth_Adapter_Ldap.html">Zend_Auth_Adapter_Ldap</a></span>
+										<a href="#setUsername" title="details" class="method-name">setUsername</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$username</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string|true</span>
+										<a href="#_checkGroupMembership" title="details" class="method-name">_checkGroupMembership</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$ldap</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$canonicalName</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$dn</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$adapterOptions</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#_getAuthorityName" title="details" class="method-name">_getAuthorityName</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#_prepareOptions" title="details" class="method-name">_prepareOptions</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$ldap</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$options</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$_authenticatedDn" id="$_authenticatedDn"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_authenticatedDn</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">71</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The DN of the authenticated account. Used to retrieve the account entry on request.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_ldap" id="$_ldap"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">Zend_Ldap</span>
+			<span class="var-name">$_ldap</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">43</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The Zend_Ldap context.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_options" id="$_options"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_options</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">50</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The array of arrays of Zend_Ldap options passed to the constructor.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_password" id="$_password"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_password</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">64</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The password of the account being authenticated.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_username" id="$_username"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_username</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">57</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The username of the account being authenticated.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">81</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			__construct
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$options</span> = <span class="var-default">array()</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$username</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$password</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$options</span><span class="var-description">: An array of arrays of Zend_Ldap options</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$username</span><span class="var-description">: The username of the account being authenticated</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$password</span><span class="var-description">: The password of the account being authenticated</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodauthenticate" id="authenticate"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">authenticate</span> (line <span class="line-number">245</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Authenticate the user</p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> Zend_Auth_Adapter_Exception</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Zend_Auth/Zend_Auth_Result.html">Zend_Auth_Result</a></span>
+		<span class="method-name">
+			authenticate
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Zend_Auth/Zend_Auth_Adapter/Zend_Auth_Adapter_Interface.html#methodauthenticate">Zend_Auth_Adapter_Interface::authenticate()</a></dt>
+						<dd>Performs an authentication attempt</dd>
+					</dl>
+			
+	</div>
+<a name="methodgetAccountObject" id="getAccountObject"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAccountObject</span> (line <span class="line-number">483</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">getAccountObject() - Returns the result entry as a stdClass object</p>
+<p class="description"><p>This resembles the feature {@see Zend_Auth_Adapter_DbTable::getResultRowObject()}.  Closes ZF-6813</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">stdClass|boolean</span>
+		<span class="method-name">
+			getAccountObject
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$returnAttribs</span> = <span class="var-default">array()</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$omitAttribs</span> = <span class="var-default">array()</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$returnAttribs</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$omitAttribs</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetLdap" id="getLdap"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getLdap</span> (line <span class="line-number">196</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the LDAP Object</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The Zend_Ldap object used to authenticate the credentials</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">Zend_Ldap</span>
+		<span class="method-name">
+			getLdap
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetOptions" id="getOptions"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getOptions</span> (line <span class="line-number">97</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the array of arrays of Zend_Ldap options of this adapter.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array|null</span>
+		<span class="method-name">
+			getOptions
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetPassword" id="getPassword"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getPassword</span> (line <span class="line-number">144</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the password of the account being authenticated, or  NULL if none is set.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string|null</span>
+		<span class="method-name">
+			getPassword
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetUsername" id="getUsername"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getUsername</span> (line <span class="line-number">121</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the username of the account being authenticated, or  NULL if none is set.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string|null</span>
+		<span class="method-name">
+			getUsername
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsetCredential" id="setCredential"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setCredential</span> (line <span class="line-number">186</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">setCredential() - set the credential (password) value to be used</p>
+<p class="description"><p>Proxies to {@see setPassword()}</p><p>Closes ZF-6813</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Provides a fluent interface</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Zend_Auth/Zend_Auth_Adapter/Zend_Auth_Adapter_Ldap.html">Zend_Auth_Adapter_Ldap</a></span>
+		<span class="method-name">
+			setCredential
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$credential</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$credential</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetIdentity" id="setIdentity"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setIdentity</span> (line <span class="line-number">171</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">setIdentity() - set the identity (username) to be used</p>
+<p class="description"><p>Proxies to {@see setUsername()}</p><p>Closes ZF-6813</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Provides a fluent interface</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Zend_Auth/Zend_Auth_Adapter/Zend_Auth_Adapter_Ldap.html">Zend_Auth_Adapter_Ldap</a></span>
+		<span class="method-name">
+			setIdentity
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$identity</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$identity</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetLdap" id="setLdap"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setLdap</span> (line <span class="line-number">215</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set an Ldap connection</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Provides a fluent interface</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Zend_Auth/Zend_Auth_Adapter/Zend_Auth_Adapter_Ldap.html">Zend_Auth_Adapter_Ldap</a></span>
+		<span class="method-name">
+			setLdap
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$ldap</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">Zend_Ldap</span>
+				<span class="var-name">$ldap</span><span class="var-description">: An existing Ldap object</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetOptions" id="setOptions"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setOptions</span> (line <span class="line-number">109</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the array of arrays of Zend_Ldap options to be used by  this adapter.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Provides a fluent interface</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Zend_Auth/Zend_Auth_Adapter/Zend_Auth_Adapter_Ldap.html">Zend_Auth_Adapter_Ldap</a></span>
+		<span class="method-name">
+			setOptions
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$options</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$options</span><span class="var-description">: The array of arrays of Zend_Ldap options</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetPassword" id="setPassword"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setPassword</span> (line <span class="line-number">155</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the passwort for the account</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Provides a fluent interface</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Zend_Auth/Zend_Auth_Adapter/Zend_Auth_Adapter_Ldap.html">Zend_Auth_Adapter_Ldap</a></span>
+		<span class="method-name">
+			setPassword
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$password</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$password</span><span class="var-description">: The password of the account being authenticated</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetUsername" id="setUsername"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setUsername</span> (line <span class="line-number">132</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the username for binding</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Provides a fluent interface</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Zend_Auth/Zend_Auth_Adapter/Zend_Auth_Adapter_Ldap.html">Zend_Auth_Adapter_Ldap</a></span>
+		<span class="method-name">
+			setUsername
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$username</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$username</span><span class="var-description">: The username for binding</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_checkGroupMembership" id="_checkGroupMembership"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_checkGroupMembership</span> (line <span class="line-number">440</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks the group membership of the bound user</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string|true</span>
+		<span class="method-name">
+			_checkGroupMembership
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$ldap</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$canonicalName</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$dn</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$adapterOptions</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">Zend_Ldap</span>
+				<span class="var-name">$ldap</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$canonicalName</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$dn</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$adapterOptions</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_getAuthorityName" id="_getAuthorityName"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_getAuthorityName</span> (line <span class="line-number">230</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns a domain name for the current LDAP options. This is used  for skipping redundant operations (e.g. authentications).</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			_getAuthorityName
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_prepareOptions" id="_prepareOptions"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_prepareOptions</span> (line <span class="line-number">394</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the LDAP specific options on the Zend_Ldap instance</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> of auth-adapter specific options</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			_prepareOptions
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$ldap</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$options</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">Zend_Ldap</span>
+				<span class="var-name">$ldap</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$options</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sat, 30 Apr 2011 12:57:09 +0530 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

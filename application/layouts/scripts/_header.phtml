@@ -1,0 +1,12 @@
+<div class="MainHeader">
+	<div class="HeaderRight">
+		<a href="<?php echo $this->url(array('controller'=>'login','action'=>'logout'));?>">logout</a>             	
+	</div>
+
+	<div class="HeaderLeft">
+		<h1>Project Name</h1>
+	</div>
+	<?php  $storage = new Zend_Auth_Storage_Session();	$oData = $storage->read();?>
+	<div class="clearb" align="center">Welcome to <strong><?php echo $oData; ?></strong></div>
+	<a href="?lan=en"><img src="/images/f-uk.gif" height="15" width="20"></a> | <a href="?lan=fr"><img src="/images/f-se.gif" height="15" width="20"></a> 
+</div>

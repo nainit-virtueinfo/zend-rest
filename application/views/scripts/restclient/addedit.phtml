@@ -1,0 +1,44 @@
+<?php $this->title = ($this->param=='') ? "Add User" : "Edit User"; $this->headTitle($this->title); ?>
+<div class="RightContent">
+	<div class="ContentBox" >
+		<h3 id="click_here"><?php echo $this->title; ?></h3>
+		<div class="ContentData" id="div1">
+			<div class="clearb borderRight">
+				<ul id="countrytabs" class="shadetabs"></ul> 
+				<div class="tabingBox">
+					<div id="country1" class="tabcontent" style="display:">
+						<div class="TableContainer">
+							<form action="/restclient/addedit<?php echo (isset($this->snIdUser) && $this->snIdUser != '') ? '?id='.$this->snIdUser : '';?>" method="<?php echo $this->form->getMethod(); ?>">
+								<table width="100%" border="0" cellspacing="0" cellpadding="5">
+									<tbody>
+										<?php
+											foreach($this->form->getElements() as $ssFormField => $asField):
+												if($asField->helper != 'formHidden' && $asField->helper != 'formSubmit'):
+										?>
+											<tr>
+												<th width="20%"><?php echo $asField->renderLabel();?></th>
+												<th width="80%"><?php echo $asField->renderViewHelper(); echo $asField->renderErrors();?></th>
+											</tr>
+										<?php
+												else:
+										?>
+											<tr>
+												<th width="20%"></th>
+												<th width="80%"><?php echo $asField->renderViewHelper();?></th>
+											</tr>
+										<?php
+												endif;
+											endforeach;
+										?>
+									</tbody>
+								</table>
+							</form>
+						</div>
+					</div>
+					<div class="clearb"></div>
+				</div>
+			</div>
+			<div class="clearb"><div></div></div>
+		</div>
+	</div>
+</div>

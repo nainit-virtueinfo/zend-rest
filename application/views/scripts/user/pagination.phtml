@@ -1,0 +1,43 @@
+
+
+<?php if ($this->pageCount): ?>
+<div class="ListingFooter"> 
+	<a href="<?php echo $this->url(array('controller'=>'user','action'=>'addedit'));?>" class="addLink" title="Add User"><?php echo $this->translate('Add User');?></a>
+	<div class="pagingBox fright">
+			<div align="right" class="paging">
+				<div class="clear">
+<!-- Previous page link -->
+<?php if (isset($this->previous)): ?>
+	<a href="<?php echo $this->url(array('page' => $this->first)); ?>" class="arrows"><img src="/images/pag-first-icon.gif" alt="" /></a>
+	<a href="<?php echo $this->url(array('page' => $this->previous)); ?>" class="arrows"><img src="/images/pag-pre-icon.gif" alt="" /></a>
+<?php else: ?>
+	<span class="arrows"><img src="/images/pag-first-icon-gray.gif" alt="" /></span>
+	<span class="arrows"><img src="/images/pag-pre-icon-gray.gif" alt="" /></span>
+<?php endif; ?>
+
+<!-- Numbered page links -->
+<?php foreach ($this->pagesInRange as $page): ?>
+<p>
+<?php if ($page != $this->current): ?>
+	<a href="<?php echo $this->url(array('page' => $page)); ?>">
+        <?php echo $page; ?>
+    </a> 
+<?php else: ?>
+<span class="selected"> <?php echo $page; ?> </span>
+<?php endif; ?>
+</p>
+<?php endforeach; ?>
+<!-- Next page link -->
+<?php if (isset($this->next)): ?>
+	<a href="<?php echo $this->url(array('page' => $this->next)); ?>" class="arrows"><img src="/images/pag-next-icon.gif" alt="" /></a>
+	<a href="<?php echo $this->url(array('page' => $this->last)); ?>" class="arrows"><img src="/images/pag-last-icon.gif" alt="" /></a>
+<?php else: ?>
+  <span class="arrows"><img src="/images/pag-next-icon-gray.gif" alt="" /></span>
+  <span class="arrows"><img src="/images/pag-last-icon-gray.gif" alt="" /></span>
+<?php endif; ?>
+<?php endif;?>
+<div class="clear"><div></div></div>
+</div>
+</div>
+</div>
+</div>
